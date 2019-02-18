@@ -19,13 +19,13 @@
             <form id="loan-form">
               <div class="form-group">
                 <div class="input-group">
-                  <span class="input-group_addon">$</span>
+                  <span class="input-group-prepend input-group-text">$</span>
                   <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
                 </div>
               </div>
               <div class="form-group">
                 <div class="input-group">
-                  <span class="input-group-addon">%</span>
+                  <span class="input-group-prepend input-group-text">%</span>
                   <input type="number" class="form-control" id="interest" placeholder="Interest">
                 </div>
               </div>
@@ -36,9 +36,29 @@
                 <input type="submit" value="Calculate" class="btn btn-dark btn-block">
               </div>
             </form>
-            <!-- Loader here -->
+            <!-- Loader -->
             <!-- Results -->
-            
+            <div id="results" class="pt-4">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-prepend input-group-text">Monthly Payment</span>
+                  <input type="number" class="form-control" id="monthly-payment" disabled>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-prepend input-group-text">Total Payment</span>
+                  <input type="number" class="form-control" id="total-payment" disabled>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-prepend input-group-text">Total Interest</span>
+                  <input type="number" class="form-control" id="total-interest" disabled>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
